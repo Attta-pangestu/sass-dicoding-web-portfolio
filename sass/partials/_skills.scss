@@ -1,14 +1,14 @@
+@use '../abstract/variables' as var;
+@use '../abstract/mixins' as mix;
+@use 'sass:map';
+
 main .skills .main-skills .skill-list {
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
     gap: 16px;
    
     .card {
-      box-shadow: 0 1px 2px 2px #00000077;
-   
-      &:hover {
-        transform: scale(1.03);
-        box-shadow: 0 4px 6px 6px #00000033;
+      @include mix.bounce-shadow  
       }
    
       .card-image {
@@ -45,10 +45,10 @@ main .skills .main-skills .skill-list {
          }
       }
     }
-  }
+  
    
   /* MD: minimum viewport width 768px or above */
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: map.get(var.$breakpoints, 'md')) {
     main .skills .main-skills .skill-list {
       gap: 24px;
       grid-template-columns: repeat(3, minmax(100px, 1fr));
@@ -56,7 +56,7 @@ main .skills .main-skills .skill-list {
   }
    
   /* LG: minimum viewport width 992px or above */
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width:  map.get(var.$breakpoints, 'lg')) {
     main .skills .main-skills .skill-list {
       gap: 32px;
     }

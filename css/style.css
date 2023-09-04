@@ -426,26 +426,26 @@ main .skills .main-skills .skill-list .card:hover {
   transform: scale(1.03);
   box-shadow: 0 4px 6px 6px rgba(0, 0, 0, 0.2);
 }
-main .skills .main-skills .skill-list .card .card-image {
+main .skills .main-skills .skill-list .card-image {
   width: 100%;
   height: 100%;
   flex-grow: 1;
   display: flex;
 }
-main .skills .main-skills .skill-list .card .card-image img {
+main .skills .main-skills .skill-list .card-image img {
   width: 80%;
   margin: auto;
   line-height: 0;
   transition: 0.3s ease-in-out;
   filter: grayscale(1);
 }
-main .skills .main-skills .skill-list .card:hover .card-image img {
+main .skills .main-skills .skill-list:hover .card-image img {
   filter: grayscale(0);
 }
-main .skills .main-skills .skill-list .card .card-body {
+main .skills .main-skills .skill-list .card-body {
   margin-block: 1rem;
 }
-main .skills .main-skills .skill-list .card .card-body .skill-name {
+main .skills .main-skills .skill-list .card-body .skill-name {
   margin-block-start: 16px;
   padding: 8px 16px;
   font-size: 24px;
@@ -492,8 +492,6 @@ main .portfolios .main-portfolios .portfolio-list .card .card-body.floating {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;

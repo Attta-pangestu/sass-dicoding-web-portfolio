@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "serve": "http-server . --port 9000 -o / -c-1", 
-    "sass-build" : "sass sass/main.scss css/style.css"
+    "sass-build" : "sass sass/main.scss css/style.css", 
+    "sass-watch" : "sass sass/main.scss css/style.css --watch" 
   },
   "keywords": [],
   "author": "YOUR_NAME <YOUR_EMAIL>",
